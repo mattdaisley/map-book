@@ -24,7 +24,7 @@ import debounce from 'debounce'
 
 import Theme from 'theme/MapBook.theme'
 
-import Button from 'components/Button/Button'
+import Button from 'components/Controls/Button/Button'
 import BottomCardContainer from 'components/common/BottomCard/BottomCardContainer/BottomCardContainer'
 import BottomCardHeader    from 'components/common/BottomCard/BottomCardHeader/BottomCardHeader'
 import BottomCardActions   from 'components/common/BottomCard/BottomCardActions/BottomCardActions'
