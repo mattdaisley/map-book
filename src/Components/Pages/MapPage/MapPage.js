@@ -3,6 +3,7 @@ import { Animated, AsyncStorage, Dimensions, Platform, StyleSheet, Text, Touchab
 import { MapView } from 'expo'
 import debounce from 'debounce'
 
+import Defaults from 'config/Defaults'
 import MapBookMap from 'components/MapBookMap/MapBookMap'
 import MapControls from 'components/MapControls/MapControls'
 import Theme from 'theme/MapBook.theme'
@@ -26,10 +27,10 @@ export default class MapPage extends React.Component {
       ...this.props.navigation.state.params,
       mapViewOptions: {
         initialRegion: { 
-          latitude: latitude || 39.869,
-          longitude: longitude || -105.0241,
-          latitudeDelta: latitudeDelta || 0.0071,
-          longitudeDelta: (latitudeDelta) * (ScreenWidth / ScreenHeight) || 0.0071 * (ScreenWidth / ScreenHeight)
+          latitude: latitude || Defaults.region.latitude,
+          longitude: longitude || Defaults.region.longitude,
+          latitudeDelta: latitudeDelta || Defaults.region.latitudeDelta,
+          longitudeDelta: (latitudeDelta) * (ScreenWidth / ScreenHeight) || Defaults.region.latitudeDelta * (ScreenWidth / ScreenHeight)
         },
         mapType: props.mapType || 'hybrid',
       },
@@ -160,6 +161,7 @@ export default class MapPage extends React.Component {
           longitude={latlng.longitude}
           onSearchTextChange={this.onSearchTextChange}
         />
+        
       </View>
     )
   }
