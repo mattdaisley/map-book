@@ -154,7 +154,7 @@ export default class MapBookMap extends React.Component {
           }
 
           {/* change to true to show bounding point pins */}
-          { true 
+          { false 
             && this.state.boundingPoints 
             && this.state.boundingPoints.map( (point, index) => {
             return <MapView.Marker
