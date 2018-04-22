@@ -105,7 +105,7 @@ export default class MapBookMap extends React.Component {
     let rightX = (ScreenWidth - mapEdgePadding.right) / 2
     let leftX = -rightX
 
-    // console.log(ScreenWidth, ScreenHeight, degreePerPixel, topY, bottomY, leftX, rightX, mapEdgePadding)
+    console.log(ScreenWidth, ScreenHeight, degreePerPixel, topY, bottomY, leftX, rightX, mapEdgePadding)
 
     const boundingPoints = [{
       latitude: latitude + ( topY * ( degreePerPixel ) ),
@@ -154,7 +154,7 @@ export default class MapBookMap extends React.Component {
           }
 
           {/* change to true to show bounding point pins */}
-          { false 
+          { true 
             && this.state.boundingPoints 
             && this.state.boundingPoints.map( (point, index) => {
             return <MapView.Marker

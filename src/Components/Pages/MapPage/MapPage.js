@@ -3,12 +3,12 @@ import { Animated, Dimensions, Platform, StyleSheet, Text, TouchableWithoutFeedb
 import { MapView } from 'expo'
 import debounce from 'debounce'
 
-import MapPageNavigationOptions from './MapPageNavigationOptions'
-import MapBookMap from './MapBookMap/MapBookMap'
-import MapAddressDetails from './MapAddressDetails/MapAddressDetails'
-import MapControls from './MapControls/MapControls'
-
+import MapBookMap from 'components/MapBookMap/MapBookMap'
+import MapControls from 'components/MapControls/MapControls'
 import Theme from 'theme/MapBook.theme'
+
+import MapPageNavigationOptions from './MapPageNavigationOptions'
+import MapAddressDetails from './MapAddressDetails/MapAddressDetails'
 
 const ScreenWidth = Dimensions.get('window').width
 const ScreenHeight = Dimensions.get('window').height
@@ -25,7 +25,7 @@ export default class MapPage extends React.Component {
     this.state = {
       ...this.props.navigation.state.params,
       mapViewOptions: {
-        region: { 
+        initialRegion: { 
           latitude: latitude || 39.869,
           longitude: longitude || -105.0241,
           latitudeDelta: latitudeDelta || 0.0071,
@@ -75,6 +75,7 @@ export default class MapPage extends React.Component {
   }
 
   onSearchTextChange = (searchText) => {
+    console.log('onSearchTextChange', searchText)
     const text = searchText.toLowerCase().trim()
 
     if ( text.length > 0 ) {
@@ -106,7 +107,7 @@ export default class MapPage extends React.Component {
       selectedBuilding
     } = this.state 
 
-    const latlng = (!selectedBuilding) ? mapViewOptions.region : selectedBuilding
+    const latlng = (!selectedBuilding) ? mapViewOptions.initialRegion : selectedBuilding
     const addressTitle = (!selectedBuilding) ? title : `${title} - ${selectedBuilding.title}`
 
     return (
