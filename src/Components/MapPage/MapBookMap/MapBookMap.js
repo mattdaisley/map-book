@@ -2,7 +2,7 @@ import React from 'react'
 import { Animated, Dimensions, Keyboard, Platform, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
 import { MapView } from 'expo'
 
-import MapControls from '../MapControls/MapControls'
+import MapControls from 'components/MapPage/MapControls/MapControls'
 
 const ScreenWidth = Dimensions.get('window').width
 const ScreenHeight = Dimensions.get('window').height

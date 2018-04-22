@@ -2,12 +2,12 @@ import React from 'react'
 import { Animated, StyleSheet, View } from 'react-native'
 import debounce from 'debounce'
 
-import BottomCardContainer from '../../common/BottomCard/BottomCardContainer/BottomCardContainer'
-import BottomCardHeader    from '../../common/BottomCard/BottomCardHeader/BottomCardHeader'
-import BottomCardActions   from '../../common/BottomCard/BottomCardActions/BottomCardActions'
+import BottomCardContainer from 'components/common/BottomCard/BottomCardContainer/BottomCardContainer'
+import BottomCardHeader    from 'components/common/BottomCard/BottomCardHeader/BottomCardHeader'
+import BottomCardActions   from 'components/common/BottomCard/BottomCardActions/BottomCardActions'
 
-import DetailsNavigateLink from '../../Details/DetailsNavigateLink/DetailsNavigateLink'
-import DetailsUnitSearch from '../../Details/DetailsUnitSearch/DetailsUnitSearch'
+import DetailsNavigateLink from 'components/Details/DetailsNavigateLink/DetailsNavigateLink'
+import DetailsUnitSearch from 'components/Details/DetailsUnitSearch/DetailsUnitSearch'
 
 import Theme from 'theme/MapBook.theme'
 

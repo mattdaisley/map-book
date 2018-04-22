@@ -6,11 +6,11 @@ import { COLOR, ThemeProvider }  from 'react-native-material-ui'
 
 import Theme from 'theme/MapBook.theme'
 
-import HomePage    from './HomePage/HomePage'
-import MapPageOld  from './MapPageOld/MapPageOld'
-import MapPage     from './MapPage/MapPage'
-import EditMapPage from './EditMapPage/EditMapPage'
-import TestMap     from './TestMap/TestMap'
+import HomePage    from 'components/HomePage/HomePage'
+import MapPageOld  from 'components/MapPageOld/MapPageOld'
+import MapPage     from 'components/MapPage/MapPage'
+import EditMapPage from 'components/EditMapPage/EditMapPage'
+import TestMap     from 'components/TestMap/TestMap'
 
 const MapBookNavigator = StackNavigator({
   Home:        { screen: HomePage },

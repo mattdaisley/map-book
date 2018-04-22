@@ -3,7 +3,6 @@ import React from 'react'
 import { StyleSheet, Text, View, Animated, TouchableWithoutFeedback } from 'react-native'
 import { MapView } from 'expo'
 
-
 import Theme from 'theme/MapBook.theme'
 
 export default class BuildingPolygons extends React.PureComponent {

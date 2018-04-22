@@ -7,7 +7,7 @@ import debounce from 'debounce'
 
 import Theme from 'theme/MapBook.theme'
 
-import AddressList from '../AddressList/AddressList'
+import AddressList from 'components/AddressList/AddressList'
 
 
 const styles = StyleSheet.create({

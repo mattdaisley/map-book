@@ -3,7 +3,6 @@ import { Animated, AsyncStorage, StyleSheet } from 'react-native'
 
 import { Icon } from 'react-native-material-ui'
 
-// import Button from '../../../Button/Button'
 import Button from 'components/Button/Button'
 
 import Theme from 'theme/MapBook.theme'

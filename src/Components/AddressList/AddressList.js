@@ -1,7 +1,7 @@
 import React from 'react'
 import { FlatList, Text, View } from 'react-native'
 
-import AddressListItem from './AddressListItem/AddressListItem'
+import AddressListItem from 'components/AddressList/AddressListItem/AddressListItem'
 // import AddressPage from '../AddressPage/AddressPage'
 
 export default class AddressList extends React.PureComponent {
