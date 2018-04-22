@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Platform, Linking } from 'react-native'
 
 import Theme from '../../MapBook.theme'
 
-import Button from '../../Button/Button'
+import Button from 'Components/Button/Button'
 
 const styles = StyleSheet.create({
   container: { height: 40, paddingRight: 8, paddingLeft: 8 },

@@ -10,13 +10,6 @@ import MapControls from './MapControls/MapControls'
 
 import Theme from '../MapBook.theme'
 
-
-import { Icon } from 'react-native-material-ui'
-
-// import Button from 'react-native'
-// import Button from 'react-native-button'
-import Button from '../Button/Button'
-
 const ScreenWidth = Dimensions.get('window').width
 const ScreenHeight = Dimensions.get('window').height
 

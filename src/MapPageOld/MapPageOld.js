@@ -10,7 +10,7 @@ import debounce from 'debounce'
 import Theme from '../MapBook.theme'
 import Styles from './MapBook.styles'
 
-import Button from '../Button/Button'
+import Button from 'Components/Button/Button'
 import BottomCardContainer from '../common/BottomCard/BottomCardContainer/BottomCardContainer'
 import BottomCardHeader    from '../common/BottomCard/BottomCardHeader/BottomCardHeader'
 import BottomCardActions   from '../common/BottomCard/BottomCardActions/BottomCardActions'

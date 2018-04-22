@@ -7,7 +7,7 @@ import { Icon } from 'react-native-material-ui'
 import debounce from 'debounce'
 // import Button from 'react-native-button'
 
-import Button from '../Button/Button'
+import Button from 'Components/Button/Button'
 
 import Theme from '../MapBook.theme'
 
