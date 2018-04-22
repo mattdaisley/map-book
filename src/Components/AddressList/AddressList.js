@@ -25,7 +25,6 @@ export default class AddressList extends React.PureComponent {
 
   _onPressItem = ( address ) => {
     const { navigate } = this.props.navigation
-    // navigate('TestMapPage', address)
     navigate('MapPage', address)
     // navigate('EditMapPage', address)
   }

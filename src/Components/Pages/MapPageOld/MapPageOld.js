@@ -11,17 +11,17 @@ import Theme from 'theme/MapBook.theme'
 import Styles from './MapBook.styles'
 
 import Button from 'components/Button/Button'
-import BottomCardContainer from '../common/BottomCard/BottomCardContainer/BottomCardContainer'
-import BottomCardHeader    from '../common/BottomCard/BottomCardHeader/BottomCardHeader'
-import BottomCardActions   from '../common/BottomCard/BottomCardActions/BottomCardActions'
-import BottomCardItem      from '../common/BottomCard/BottomCardItem/BottomCardItem'
+import BottomCardContainer from 'components/common/BottomCard/BottomCardContainer/BottomCardContainer'
+import BottomCardHeader    from 'components/common/BottomCard/BottomCardHeader/BottomCardHeader'
+import BottomCardActions   from 'components/common/BottomCard/BottomCardActions/BottomCardActions'
+import BottomCardItem      from 'components/common/BottomCard/BottomCardItem/BottomCardItem'
 
-import DetailsContainer from '../Details/DetailsContainer/DetailsContainer'
-import DetailsTitle from '../Details/DetailsTitle/DetailsTitle'
-import DetailsNavigateLink from '../Details/DetailsNavigateLink/DetailsNavigateLink'
-import DetailsUnitSearch from '../Details/DetailsUnitSearch/DetailsUnitSearch'
+import DetailsContainer from 'components/Details/DetailsContainer/DetailsContainer'
+import DetailsTitle from 'components/Details/DetailsTitle/DetailsTitle'
+import DetailsNavigateLink from 'components/Details/DetailsNavigateLink/DetailsNavigateLink'
+import DetailsUnitSearch from 'components/Details/DetailsUnitSearch/DetailsUnitSearch'
 
-import BuildingPolygons from '../MapObjects/BuildingPolygons/BuildingPolygons'
+import BuildingPolygons from 'components/MapObjects/BuildingPolygons/BuildingPolygons'
 
 const ScreenWidth = Dimensions.get('window').width
 const ScreenHeight = Dimensions.get('window').height

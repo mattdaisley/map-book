@@ -2,8 +2,6 @@ import React from 'react'
 import { Animated, Dimensions, Keyboard, Platform, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
 import { MapView } from 'expo'
 
-import MapControls from 'components/MapPage/MapControls/MapControls'
-
 const ScreenWidth = Dimensions.get('window').width
 const ScreenHeight = Dimensions.get('window').height
 
@@ -164,11 +162,6 @@ export default class MapBookMap extends React.Component {
               coordinate={point}
             />
           }) }
-
-          {/* <MapControls 
-            mapType={mapViewOptions.mapType}
-            onToggleMapType={this.onToggleMapType}
-          /> */}
           
         </MapView>
       </TouchableWithoutFeedback>
