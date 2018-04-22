@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "sdkVersion": "23.0.0",
+    "name": "Mobile Map Book",
+    "icon": "./icon.png",
+    "privacy": "public",
+    "version": "1.0.3",
+    "slug": "map-book",
+    "ios": {
+      "bundleIdentifier": "com.mobilemapbook.newAppBundleID"
+    },
+    "android": {
+      "package": "com.mobilemapbook.androidPackageID",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCtUbtwAMcoggn-1_emwdAjjWTOUFeeDm4"
+        }
+      }
+    },
+    "splash": {
+      "image": "./splashScreen.png",
+      "backgroundColor": "#00bcd4",
+      "resizeMode": "cover"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#00bcd4"
+    }
+  }
+}
