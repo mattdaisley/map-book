@@ -1,9 +1,9 @@
 import React from 'react'
 import { View, Text, StyleSheet, Platform, Linking } from 'react-native'
 
-import Theme from 'Theme/MapBook.theme'
+import Theme from 'theme/MapBook.theme'
 
-import Button from 'Components/Button/Button'
+import Button from 'components/Button/Button'
 
 const styles = StyleSheet.create({
   container: { height: 40, paddingRight: 8, paddingLeft: 8 },

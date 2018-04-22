@@ -4,7 +4,7 @@ import { StatusBar, StyleSheet } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import { COLOR, ThemeProvider }  from 'react-native-material-ui'
 
-import Theme from 'Theme/MapBook.theme'
+import Theme from 'theme/MapBook.theme'
 
 import HomePage    from './HomePage/HomePage'
 import MapPageOld  from './MapPageOld/MapPageOld'

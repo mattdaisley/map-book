@@ -3,7 +3,7 @@ import { View, Text, TextInput, StyleSheet } from 'react-native'
 import Button from 'react-native-button'
 import { Icon } from 'react-native-material-ui'
 
-import Theme from 'Theme/MapBook.theme'
+import Theme from 'theme/MapBook.theme'
 
 export default class DetailsUnitSearch extends React.PureComponent {
 

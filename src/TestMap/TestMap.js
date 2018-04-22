@@ -7,9 +7,9 @@ import { Icon } from 'react-native-material-ui'
 import debounce from 'debounce'
 // import Button from 'react-native-button'
 
-import Button from 'Components/Button/Button'
+import Button from 'components/Button/Button'
 
-import Theme from 'Theme/MapBook.theme'
+import Theme from 'theme/MapBook.theme'
 
 const screenWidth = Dimensions.get('window').width
 const screenHeight = Dimensions.get('window').height

@@ -5,7 +5,7 @@ import {
   TouchableWithoutFeedback,
 } from 'react-native'
 
-import Theme from 'Theme/MapBook.theme'
+import Theme from 'theme/MapBook.theme'
 
 export default class OpenContentButton extends React.Component {
   

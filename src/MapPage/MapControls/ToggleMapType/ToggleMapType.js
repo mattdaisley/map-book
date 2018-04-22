@@ -4,9 +4,9 @@ import { Animated, AsyncStorage, StyleSheet } from 'react-native'
 import { Icon } from 'react-native-material-ui'
 
 // import Button from '../../../Button/Button'
-import Button from 'Components/Button/Button'
+import Button from 'components/Button/Button'
 
-import Theme from 'Theme/MapBook.theme'
+import Theme from 'theme/MapBook.theme'
 
 const MAP_TYPE_HYBRID = 'hybrid'
 const MAP_TYPE_STANDARD = 'standard'
