@@ -8,7 +8,7 @@ import MapBookMap from './MapBookMap/MapBookMap'
 import MapAddressDetails from './MapAddressDetails/MapAddressDetails'
 import MapControls from './MapControls/MapControls'
 
-import Theme from '../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 const ScreenWidth = Dimensions.get('window').width
 const ScreenHeight = Dimensions.get('window').height

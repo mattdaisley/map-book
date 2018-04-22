@@ -4,7 +4,7 @@ import {
   View
 } from 'react-native'
 
-import Theme from '../../../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 export default class BottomCardContent extends React.Component {
 

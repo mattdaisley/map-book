@@ -9,7 +9,7 @@ import debounce from 'debounce'
 
 import Button from 'Components/Button/Button'
 
-import Theme from '../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 const screenWidth = Dimensions.get('window').width
 const screenHeight = Dimensions.get('window').height

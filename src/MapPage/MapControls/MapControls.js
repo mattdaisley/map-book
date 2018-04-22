@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native'
 
 import ToggleMapType from './ToggleMapType/ToggleMapType'
 
-import Theme from '../../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 export default class MapControls extends React.Component {
 

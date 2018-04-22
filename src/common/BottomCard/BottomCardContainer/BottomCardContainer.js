@@ -14,7 +14,7 @@ import { LinearGradient } from 'expo'
 
 import Button from 'react-native-button'
 
-import Theme from '../../../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 import OpenContentButton from '../OpenContentButton/OpenContentButton'
 

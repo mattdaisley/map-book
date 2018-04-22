@@ -22,7 +22,7 @@ import { Icon } from 'react-native-material-ui'
 import debounce from 'debounce'
 // import Button from 'react-native-button'
 
-import Theme from '../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 import Button from 'Components/Button/Button'
 import BottomCardContainer from '../common/BottomCard/BottomCardContainer/BottomCardContainer'

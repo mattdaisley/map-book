@@ -5,7 +5,7 @@ import {
   Text
 } from 'react-native'
 
-import Theme from '../../../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 export default class BottomCardActions extends React.Component {
 

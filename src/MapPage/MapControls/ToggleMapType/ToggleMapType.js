@@ -6,7 +6,7 @@ import { Icon } from 'react-native-material-ui'
 // import Button from '../../../Button/Button'
 import Button from 'Components/Button/Button'
 
-import Theme from '../../../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 const MAP_TYPE_HYBRID = 'hybrid'
 const MAP_TYPE_STANDARD = 'standard'

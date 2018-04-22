@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Animated, TouchableWithoutFeedback } from 'reac
 import { MapView } from 'expo'
 
 
-import Theme from '../../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 export default class BuildingPolygons extends React.PureComponent {
 

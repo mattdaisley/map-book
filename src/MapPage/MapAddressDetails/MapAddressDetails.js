@@ -9,7 +9,7 @@ import BottomCardActions   from '../../common/BottomCard/BottomCardActions/Botto
 import DetailsNavigateLink from '../../Details/DetailsNavigateLink/DetailsNavigateLink'
 import DetailsUnitSearch from '../../Details/DetailsUnitSearch/DetailsUnitSearch'
 
-import Theme from '../../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 export default class MapAddressDetails extends React.Component {
 

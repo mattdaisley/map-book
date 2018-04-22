@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet, View, Animated, Keyboard, TouchableWithoutFeedback } from 'react-native'
-import Theme from '../../MapBook.theme'
+
+import Theme from 'Theme/MapBook.theme'
 
 import Button from 'react-native-button'
 

@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 
 import Button from 'Components/Button/Button'
 
-import Theme from '../MapBook.theme'
+import Theme from 'Theme/MapBook.theme'
 
 export default MapPageNavigationOptions = ({ navigation }) => {
   const { state, setParams } = navigation
