@@ -1,5 +1,5 @@
 import React from 'react'
-import { Animated, AsyncStorage, StyleSheet } from 'react-native'
+import { Animated, StyleSheet } from 'react-native'
 
 import { Icon } from 'react-native-material-ui'
 
@@ -31,14 +31,7 @@ export default class ToggleMapType extends React.Component {
   onPress = () => {
     let mapType = (this.state.mapType === MAP_TYPE_HYBRID) ? MAP_TYPE_STANDARD : MAP_TYPE_HYBRID 
     
-    AsyncStorage.setItem("@MobileMapBook:mapType", mapType)
-      .then( () => {
-        this.setState({ mapType })
-      })
-      .catch( () => {
-        this.setState({ mapType })
-      })
-    
+    this.setState({ mapType })
     if (this.props.onPress) this.props.onPress(mapType);
   }
 

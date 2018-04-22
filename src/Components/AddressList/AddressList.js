@@ -14,7 +14,7 @@ export default class AddressList extends React.PureComponent {
 
   componentDidMount = () => {
     // console.log(this.props.data)
-    this._onPressItem(this.props.data[0])
+    // this._onPressItem(this.props.data[0])
     // this._onPressItem(this.props.data[12])
     // this._onPressItem(this.props.data[21])
     // this._onPressItem(this.props.data[22])

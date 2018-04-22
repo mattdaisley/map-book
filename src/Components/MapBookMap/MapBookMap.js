@@ -55,7 +55,7 @@ export default class MapBookMap extends React.Component {
   onMapReady = () => {
     if ( !this.state.mapReady ) {
       this.setState({ mapReady: true }, this.setBoundingPoints )
-      console.log('mapready')
+      // console.log('mapready')
     }
     if (!!this.props.onMapReady && typeof this.props.onMapReady === 'function')
       this.props.onMapReady();
@@ -105,7 +105,7 @@ export default class MapBookMap extends React.Component {
     let rightX = (ScreenWidth - mapEdgePadding.right) / 2
     let leftX = -rightX
 
-    console.log(ScreenWidth, ScreenHeight, degreePerPixel, topY, bottomY, leftX, rightX, mapEdgePadding)
+    // console.log(ScreenWidth, ScreenHeight, degreePerPixel, topY, bottomY, leftX, rightX, mapEdgePadding)
 
     const boundingPoints = [{
       latitude: latitude + ( topY * ( degreePerPixel ) ),

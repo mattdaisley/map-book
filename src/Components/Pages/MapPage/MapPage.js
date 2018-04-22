@@ -1,5 +1,5 @@
 import React from 'react'
-import { Animated, Dimensions, Platform, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
+import { Animated, AsyncStorage, Dimensions, Platform, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
 import { MapView } from 'expo'
 import debounce from 'debounce'
 
@@ -39,16 +39,20 @@ export default class MapPage extends React.Component {
 
   async componentDidMount() {
     const { id } = this.props.navigation.state.params
+    const { mapViewOptions } = this.state
+
     fetch(`https://6sux2v084j.execute-api.us-west-1.amazonaws.com/test/addresses/${id}/buildings`)
       .then( results => results.json() )
       .then( data => {
         this.setState({ buildings: data })
       })
+
+    this.getMapType();
   }
 
   getFilteredUnits = ( buildings, text ) => {
     let filteredUnits = []
-    this.state.buildings.forEach( (building) => {
+    buildings.forEach( (building) => {
       if ( !!building.units && building.units.length > 0 ) {
         const matchingUnits = building.units.filter( unit => {
           if ( unit.title.toLowerCase().indexOf(text) === 0 ) return true
@@ -75,11 +79,12 @@ export default class MapPage extends React.Component {
   }
 
   onSearchTextChange = (searchText) => {
-    console.log('onSearchTextChange', searchText)
+    const { buildings } = this.state
+
     const text = searchText.toLowerCase().trim()
 
     if ( text.length > 0 ) {
-      const filteredUnits = this.getFilteredUnits( this.state.buildings, text )
+      const filteredUnits = this.getFilteredUnits( buildings, text )
       const selectedBuilding = filteredUnits[0]
 
       if ( !!selectedBuilding ) {
@@ -96,8 +101,29 @@ export default class MapPage extends React.Component {
   }
 
   onToggleMapType = (mapType) => {
+    this.setMapType(mapType)
+  }
+
+  getMapType = () => {
     const { mapViewOptions } = this.state
-    this.setState({ mapViewOptions: { ...mapViewOptions, mapType } })
+
+    AsyncStorage.getItem("@MobileMapBook:mapType")
+      .then( ( mapType ) => {
+        this.setState({mapViewOptions: { ...mapViewOptions, mapType }})
+      })
+      .catch( () => { })
+  }
+
+  setMapType = (mapType) => {
+    const { mapViewOptions } = this.state
+
+    AsyncStorage.setItem("@MobileMapBook:mapType", mapType)
+      .then( () => {
+        this.setState({ mapViewOptions: { ...mapViewOptions, mapType } })
+      })
+      .catch( () => {
+        this.setState({ mapViewOptions: { ...mapViewOptions, mapType } })
+      })
   }
   
   render() {

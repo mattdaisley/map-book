@@ -44,9 +44,7 @@ export default class DetailsUnitSearch extends React.PureComponent {
   }
   
   render() {
-
     const { value } = this.state
-    console.log(value)
 
     return (
       <View 
