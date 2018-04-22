@@ -2,9 +2,9 @@ import React from 'react'
 import { Animated, StyleSheet, View } from 'react-native'
 import debounce from 'debounce'
 
-import BottomCardContainer from 'components/common/BottomCard/BottomCardContainer/BottomCardContainer'
-import BottomCardHeader    from 'components/common/BottomCard/BottomCardHeader/BottomCardHeader'
-import BottomCardActions   from 'components/common/BottomCard/BottomCardActions/BottomCardActions'
+import BottomCardContainer from 'components/BottomCard/BottomCardContainer/BottomCardContainer'
+import BottomCardHeader    from 'components/BottomCard/BottomCardHeader/BottomCardHeader'
+import BottomCardActions   from 'components/BottomCard/BottomCardActions/BottomCardActions'
 
 import DetailsNavigateLink from 'components/Details/DetailsNavigateLink/DetailsNavigateLink'
 import DetailsUnitSearch from 'components/Details/DetailsUnitSearch/DetailsUnitSearch'
